@@ -1,6 +1,6 @@
 # Spoofer-UD-Fortnite
 
-New Spoofer UD BE and EAC. Driver got leaked by a friend
+New Spoofer UD BE and EAC. Driver got leaked by a friend you can't sell it skids <3
 
 ![image](https://user-images.githubusercontent.com/97419008/149679150-d89dc19c-84ad-474d-b6dd-305a3aaae5b1.png)
 
